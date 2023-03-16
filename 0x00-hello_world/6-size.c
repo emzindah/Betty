@@ -18,3 +18,4 @@ int main(void)
 	print("size of long long int: %lu byte(S)\n", (unsigned long)sizeof(d));
 	print("size of float: %lu byte(S)\n", (unsigned long)sizeof(f));
 	return (0);
+}
