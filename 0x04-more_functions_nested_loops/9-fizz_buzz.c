@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - entry point
- * description: prints the numbers 1 - 100 w/
+ * Description: prints the numbers 1 - 100 w/
  * Fizz for multiples of 3, Buzz for multiples of 5,
  * and FizzBuzz for multiples of both
  *
@@ -13,7 +13,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
 			printf("FizzBuzz");
