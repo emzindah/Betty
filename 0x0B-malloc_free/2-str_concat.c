@@ -3,15 +3,32 @@
 #include <stdlib.h>
 
 /**
+ * get_str_len - length of a string
+ * @str: length of string to be found
+ * Return: integer value of the string
+ */
+int get_str_len(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	return (i + 1);
+}
+
+/**
  * str_concat - function that concatenates two strings
  * @s1: first input
  * @s2: second input
  *Return: contents of s1 and s2
+ *function should return NULL on failure
+ *if NULL is passed, treat it as an empty string
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int i, j;
+	int s1_size, s2_size, i, j;
 
 	if (s1 == NULL)
 		s1 = "";
