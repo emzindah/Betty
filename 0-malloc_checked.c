@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b);
 
 	ptr = malloc(b);
 
-	for (ptr == NULL)
+	if (ptr == NULL)
 		teminate(98);
 
 	return (ptr);
