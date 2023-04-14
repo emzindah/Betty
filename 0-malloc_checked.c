@@ -3,7 +3,7 @@
 #include <stdlib>
 
 /**
- * malloc_checked - function that allocates memory using malloc.
+ * *malloc_checked - function that allocates memory using malloc.
  * @b: num of bytes to be allocated
  *
  * Return: pointer to allocated memory
