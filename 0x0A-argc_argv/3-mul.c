@@ -1,19 +1,20 @@
 #include<stdio.h>
 #include "main.h"
+#include<stdlib.h>
 /**
- * _atoi - convetrs a string into aan integer
+ * main - print the result of the multiplication followed by a new line
  * @agrc: arguments count
  * @argv: argument array
  * Return: 0 on success & 1 otherwise
  */
-int _atoi(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, j;
 
-	if (argc == 0)
+	if (argc == 1)
 	{
-		i = _atoi(argv[1]);
-		j = _atoi(argv[2]);
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
 		printf("%d\n", i * j);
 		return (0);
 	}
