@@ -15,6 +15,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(emt, n);
 
+	if(n == 0)
+	{
+		return (0):
+	}
 
 	for (i = 0; i < n; i++)
 	{
