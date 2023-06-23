@@ -1,25 +1,24 @@
-#include "function_pointers.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
+
 /**
- * main - prints the opcodes of its own main function.
- * @argv: array of pointers to arguments
- * @argc: number of arguments
+ * main - prints opcodes of its own main function
+ * @argc: number of arguments count
+ * @argv: array of arguments vector
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
 	int bytes, index;
-	int (*address)(int, char **) = main;
-	unsigned char opcode;
+	char *array;
 
 	if (argc != 2)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(1);
 	}
+
 	bytes = atoi(argv[1]);
 
 	if (bytes < 0)
@@ -28,19 +27,17 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
+	arr = (char *)main;
+
 	for (index = 0; index < bytes; index++)
 	{
-		opcode = *(unsigned char *)address;
-		printf("%.2x", opcode);
-
-		if (index == bytes - 1)
-			continue;
-		print(" ");
-
-		address++;
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", array[index]);
+				;
+		}
+		printf("%02hhx ", array[index]);
 	}
-
-	printf("\n");
-
 	return (0);
 }
+
