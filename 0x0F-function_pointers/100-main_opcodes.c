@@ -27,11 +27,11 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	arr = (char *)main;
+	array = (char *)main;
 
 	for (index = 0; index < bytes; index++)
 	{
-		if (i == bytes - 1)
+		if (index == bytes - 1)
 		{
 			printf("%02hhx\n", array[index]);
 				;
