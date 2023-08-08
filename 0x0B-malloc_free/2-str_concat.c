@@ -38,10 +38,9 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[m] != '\0')
 	{
-		ptr[n] = s2[m];
+		ptr[m] = s2[m];
 		m++;
-		n++;
 	}
-	ptr[n] = '\0';
+	ptr[n] = ptr[m] = '\0';
 		return (ptr);
 }
