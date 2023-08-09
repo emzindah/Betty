@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *argstostr -  concatenates all the arguments of the program
+ * argstostr -  concatenates all the arguments of the program
  * @ac: argc
  * @av: argv
  * Return: a pointer to a string or NULL
@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 
 	m = n = 0;
 
-	for (a = 0; a < ac ; a++)
+	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b]; b++)
 		n++;
@@ -32,7 +32,7 @@ char *argstostr(int ac, char **av)
 
 	for (a = 0; a < ac; a++)
 	{
-		for (b = 0; av[a][b]; a++)
+		for (b = 0; av[a][b]; b++)
 		{
 			(str[m] = av[a][b]);
 			m++;
