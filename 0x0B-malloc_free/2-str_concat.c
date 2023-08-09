@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int n, m;
+	unsigned int n, m;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -38,8 +38,9 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[m] != '\0')
 	{
-		ptr[m] = s2[m];
+		ptr[n] = s2[m];
 		m++;
+		n++;
 	}
 	ptr[n] = ptr[m] = '\0';
 		return (ptr);
