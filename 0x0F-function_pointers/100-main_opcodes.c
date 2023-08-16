@@ -5,7 +5,6 @@
  * main - prints opcodes of its own main function
  * @argc: number of arguments count
  * @argv: array of arguments vector
- *
  * Return: Always 0
  */
 int main(int argc, char *argv[])
