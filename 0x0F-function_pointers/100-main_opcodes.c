@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 	}
 
 	b = atoi(argv[1]);
-
 	if (b < 0)
 	{
 		printf("Error\n");
@@ -31,7 +30,7 @@ int main(int argc, char *argv[])
 
 	for (index = 0; index < b; index++)
 	{
-		if (index == b - 1)
+		if (index < b - 1)
 		{
 			printf("%02hhx\n", array[index]);
 				;
