@@ -19,7 +19,9 @@ unsigned int binary_to_uint(const char *b)
 		;
 	}
 	if (a == 1 && (b[0] == '0' || b[0] == '1'))
+	{
 		return (b[0] - 48);
+	}
 
 	for (n = 0; b[n] != '\0'; n++)
 	{
